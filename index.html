@@ -1,35 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>AWS Console Clone</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css"/>
 </head>
 <body>
 
 <!-- Sidebar -->
-<div class="sidebar">
-  <h2>AWS</h2>
-  <ul>
+<aside class="sidebar" id="sidebar">
+  <div class="logo">AWS</div>
+  <ul class="menu">
     <li class="active">Dashboard</li>
     <li>EC2</li>
     <li>S3</li>
     <li>Lambda</li>
     <li>IAM</li>
   </ul>
-</div>
+</aside>
 
 <!-- Main -->
-<div class="main">
+<main class="main">
 
   <!-- Navbar -->
-  <div class="navbar">
-    <input type="text" id="search" placeholder="Search AWS services...">
-  </div>
+  <header class="navbar">
+    <button id="menuBtn">☰</button>
+    <input id="search" type="text" placeholder="Search AWS services..."/>
+    <button id="themeBtn">🌙</button>
+  </header>
+
+  <!-- Metrics -->
+  <section class="metrics">
+    <div class="metric">
+      <p>Running Instances</p>
+      <h2>3</h2>
+    </div>
+    <div class="metric">
+      <p>S3 Buckets</p>
+      <h2>5</h2>
+    </div>
+    <div class="metric">
+      <p>Lambda Functions</p>
+      <h2>2</h2>
+    </div>
+  </section>
 
   <!-- Services -->
-  <div class="services" id="services">
+  <section class="services" id="services">
 
     <div class="card" data-name="ec2 compute server">
       <h3>EC2</h3>
@@ -41,7 +59,7 @@
       <p>Object Storage</p>
     </div>
 
-    <div class="card" data-name="lambda serverless function">
+    <div class="card" data-name="lambda serverless">
       <h3>Lambda</h3>
       <p>Serverless Compute</p>
     </div>
@@ -51,9 +69,19 @@
       <p>Access Control</p>
     </div>
 
-  </div>
+    <div class="card" data-name="cloudwatch monitoring logs">
+      <h3>CloudWatch</h3>
+      <p>Monitoring</p>
+    </div>
 
-</div>
+    <div class="card" data-name="rds database">
+      <h3>RDS</h3>
+      <p>Managed Database</p>
+    </div>
+
+  </section>
+
+</main>
 
 <script src="app.js"></script>
 </body>
