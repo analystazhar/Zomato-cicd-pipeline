@@ -3,91 +3,58 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Zomato Clone</title>
+  <title>AWS Console Clone</title>
   <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-<!-- Navbar -->
-<nav class="navbar">
-  <div class="logo">ZomatoClone</div>
-  <div class="nav-links">
-    <a href="#">Login</a>
-    <a href="#">Sign Up</a>
+<!-- Sidebar -->
+<div class="sidebar">
+  <h2>AWS</h2>
+  <ul>
+    <li class="active">Dashboard</li>
+    <li>EC2</li>
+    <li>S3</li>
+    <li>Lambda</li>
+    <li>IAM</li>
+  </ul>
+</div>
+
+<!-- Main -->
+<div class="main">
+
+  <!-- Navbar -->
+  <div class="navbar">
+    <input type="text" id="search" placeholder="Search AWS services...">
   </div>
-</nav>
 
-<!-- Hero Section -->
-<section class="hero">
-  <h1>Discover the best food & drinks</h1>
-  <div class="search-box">
-    <input type="text" placeholder="Search for restaurant, cuisine or dish">
-  </div>
-</section>
+  <!-- Services -->
+  <div class="services" id="services">
 
-<!-- Categories -->
-<section class="categories">
-  <div class="category">🍕 Pizza</div>
-  <div class="category">🍔 Burgers</div>
-  <div class="category">🍛 Indian</div>
-  <div class="category">🍣 Sushi</div>
-  <div class="category">🥗 Healthy</div>
-</section>
-
-<!-- Filters -->
-<section class="filters">
-  <button>Filters</button>
-  <button>Rating 4.0+</button>
-  <button>Fast Delivery</button>
-  <button>Pure Veg</button>
-</section>
-
-<!-- Restaurant Cards -->
-<section class="restaurants">
-
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1548365328-8b8493a8f2b0?q=80&w=800&auto=format&fit=crop">
-    <div class="card-content">
-      <h3>Pizza Palace</h3>
-      <p>⭐ 4.3 • 30 mins</p>
-      <p class="price">₹300 for one</p>
+    <div class="card" data-name="ec2 compute server">
+      <h3>EC2</h3>
+      <p>Virtual Servers</p>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1550547660-d9450f859349?q=80&w=800&auto=format&fit=crop">
-    <div class="card-content">
-      <h3>Burger Hub</h3>
-      <p>⭐ 4.1 • 25 mins</p>
-      <p class="price">₹200 for one</p>
+    <div class="card" data-name="s3 storage bucket">
+      <h3>S3</h3>
+      <p>Object Storage</p>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1604908176997-4314d0f0d7c2?q=80&w=800&auto=format&fit=crop">
-    <div class="card-content">
-      <h3>Spice Villa</h3>
-      <p>⭐ 4.5 • 40 mins</p>
-      <p class="price">₹350 for one</p>
+    <div class="card" data-name="lambda serverless function">
+      <h3>Lambda</h3>
+      <p>Serverless Compute</p>
     </div>
-  </div>
 
-  <div class="card">
-    <img src="https://images.unsplash.com/photo-1553621042-f6e147245754?q=80&w=800&auto=format&fit=crop">
-    <div class="card-content">
-      <h3>Sushi World</h3>
-      <p>⭐ 4.6 • 35 mins</p>
-      <p class="price">₹500 for one</p>
+    <div class="card" data-name="iam security access">
+      <h3>IAM</h3>
+      <p>Access Control</p>
     </div>
+
   </div>
 
-</section>
+</div>
 
-<!-- Footer -->
-<footer>
-  <p>© 2026 Zomato Clone</p>
-</footer>
 <script src="app.js"></script>
 </body>
 </html>
