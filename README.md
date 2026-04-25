@@ -1,4 +1,4 @@
-# Zomato-cicd-pipeline
+# aws-cicd-pipeline
 # 🚀 Secure Static Website Deployment on AWS (S3 + CloudFront + CI/CD)
 
 ## 📌 Project Overview
